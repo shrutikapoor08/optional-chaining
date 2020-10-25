@@ -18,7 +18,7 @@ http
 //           children: null
 //       };
     res.setHeader('Content-Type', 'application/json');
-    res.end(JSON.stringify(obj.children[1]?.children[0]?.id));
+    res.end(JSON.stringify(obj.children[1]?.children[1]?.id ?? 'No children found'));
 
   })
   .listen(8082); //the server object listens on port 8080
